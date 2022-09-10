@@ -177,35 +177,7 @@ rect{
 </style>
 </head>
 <body>
-  <div class="preloader">
-    
-    <svg width="200px" height="200px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style="background: none;">
-      <circle cx="75" cy="50" fill="#363a3c" r="6.39718">
-          <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.875s"></animate>
-      </circle>
-      <circle cx="67.678" cy="67.678" fill="#363a3c" r="4.8">
-          <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.75s"></animate>
-      </circle>
-      <circle cx="50" cy="75" fill="#363a3c" r="4.8">
-          <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.625s"></animate>
-      </circle>
-      <circle cx="32.322" cy="67.678" fill="#363a3c" r="4.8">
-          <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.5s"></animate>
-      </circle>
-      <circle cx="25" cy="50" fill="#363a3c" r="4.8">
-          <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.375s"></animate>
-      </circle>
-      <circle cx="32.322" cy="32.322" fill="#363a3c" r="4.80282">
-          <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.25s"></animate>
-      </circle>
-      <circle cx="50" cy="25" fill="#363a3c" r="6.40282">
-          <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.125s"></animate>
-      </circle>
-      <circle cx="67.678" cy="32.322" fill="#363a3c" r="7.99718">
-          <animate attributeName="r" values="4.8;4.8;8;4.8;4.8" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="0s"></animate>
-      </circle>
-  </svg>    
-  </div>
+ 
 <!---------- back to top button  --------->
 <button id="top-button" class="top-btn">
   <svg width="139px" height="60px" viewBox="0 0 180 60" class="border">
@@ -3515,22 +3487,7 @@ rect{
     $(this).css("color", "#d8aaf8");
 });
 </script>
-<script>const preloader = document.querySelector('.preloader');
 
-  const fadeEffect = setInterval(() => {
-    // if we don't set opacity 1 in CSS, then   //it will be equaled to "", that's why we   // check it
-    if (!preloader.style.opacity) {
-      preloader.style.opacity = 1;
-    }
-    if (preloader.style.opacity > 0) {
-      preloader.style.opacity -= 0.1;
-    } else {
-      clearInterval(fadeEffect);
-    }
-  }, 200);
-  
-  window.addEventListener('load', fadeEffect);
-  </script>
 </body>
 
 </html>
