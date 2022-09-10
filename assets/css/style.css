@@ -689,6 +689,9 @@ nav ul li ul li a {
 
 /* dashbored section end */
 /* roadmap css start  */
+.point-heading{
+  font-size: 25px;
+}
 .roadmap-section-padding {
   margin-top: 200px;
 }
@@ -1624,7 +1627,7 @@ display: flex;
 .check{
   width: 50px; 
   height: 50px;
-  margin-top: 12px;
+  margin-top: 10px;
   margin-left: 20px;
 }
 
@@ -1648,3 +1651,21 @@ display: flex;
 }
 
 /* roadmap2 css end */
+
+
+
+/* page loader css  */
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: rgb(23, 22, 22);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  transition: opacity 1s linear;
+}
